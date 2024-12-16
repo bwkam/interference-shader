@@ -48,7 +48,7 @@ class Main extends Application {
 
 		program.injectIntoFragmentShader('
 			vec4 compose() {
-				vec2 uv = vTexCoord.xy / vTexCoord.xy; 
+        vec2 uv = vTexCoord;
 				uv -= 0.5;
 				uv.x *= vSize.x / vSize.y; 
 				float t = uTime;
